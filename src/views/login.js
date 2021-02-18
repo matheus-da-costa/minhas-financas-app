@@ -24,7 +24,7 @@ class Login extends React.Component {
             email: this.state.email,
             senha: this.state.senha
         }).then( response => {
-            this.context.iniciarSessao(response.data)
+            this.context.iniciarSessaoau(response.data)
             this.props.history.push('/home')
         }).catch( erro => {
             mensagemErro(erro.response.data)
